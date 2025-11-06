@@ -139,7 +139,12 @@ class SOCAgent:
         filepath = local_path / "data" / f"soc_report_{timestamp}.json"
 
         try:
-            data = json.loads(raw_string)
+            json_match = re.search(r"\{.*\}", raw_string, re.DOTALL)
+            if not json_match:
+                raise ValueError("No JSON object found in response")
+
+            json_str = json_match.group(0)
+            data = json.loads(json_str)
             with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
             logger.info("Report validated and saved", path=str(filepath))
