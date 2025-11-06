@@ -1,0 +1,12 @@
+[
+    {"id": 1, "message": "HTTP GET request from 192.168.5.33 to invoice-update[.]com/inv_2025.pdf.exe. File downloaded. SHA256: 7c55c3656184b145b3b3f6449c05d93fa389650ad235512d2f99ee412085cf3a"},
+    {"id": 2, "message": "Process creation: C:\\Users\\alice\\Downloads\\inv_2025.pdf.exe started on host FINANCE-PC. File hash: 7c55c3656184b145b3b3f6449c05d93fa389650ad235512d2f99ee412085cf3a"},
+    {"id": 3, "message": "Scheduled task 'SystemUpdater' created on FINANCE-PC, executing C:\\Windows\\Temp\\svchost_loader.exe. Hash: 36a81cd64e7649d9f91925194e89e8463c980682596eef19c4f5df6e1ac77b2a"},
+    {"id": 4, "message": "Outbound TLS connection from FINANCE-PC (192.168.5.33:51234) to 185.165.169.252:443 established."},
+    {"id": 5, "message": "DNS query from 192.168.5.33: 'api.config-cdn[.]net' resolved to 185.165.169.252."},
+    {"id": 6, "message": "EDR alert: powershell.exe spawned from svchost_loader.exe with command containing 'Get-WmiObject -Class Win32_UserAccount'. File hash of parent: 36a81cd64e7649d9f91925194e89e8463c980682596eef19c4f5df6e1ac77b2a"},
+    {"id": 7, "message": "RDP authentication successful from 192.168.5.33 to FILESERVER (10.10.20.15) as user 'svc_backup'."},
+    {"id": 8, "message": "NetFlow record: FILESERVER (10.10.20.15) → 192.168.5.33, TCP, 1.8 GB transferred over port 445 in 9 minutes."},
+    {"id": 9, "message": "Outbound HTTP POST from FINANCE-PC to backup-sync[.]net/upload.php. Payload size: 1.8 GB. Destination IP: 185.165.169.252."},
+    {"id": 10, "message": "SMB session initiated from FINANCE-PC (192.168.5.33) to 12 internal hosts (192.168.10.0/24) within 20 seconds."}
+]
